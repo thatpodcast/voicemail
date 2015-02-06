@@ -6,6 +6,12 @@ Want to give it a try? Leave [@thatpodcast](https://twitter.com/thatpodcast) a v
 
 ## Deployment
 
+Deploy to Heroku using a single click:
+
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+
+Alternatively, you can deploy manually:
+
 ```
 $ git clone https://github.com/thatpodcast/voicemail
 $ cd voicemail

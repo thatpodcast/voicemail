@@ -1,0 +1,19 @@
+{
+    "name": "Simple Voicemail App",
+    "description": "Uses Twilio, SendGrid and PHP to provide a voicemail inbox.",
+    "keywords": [
+        "phone",
+        "twilio",
+        "voicemail"
+    ],
+    "website": "http://thatpodcast.io/",
+    "repository": "https://github.com/thatpodcast/voicemail",
+    "env": {
+        "VOICEMAIL_EMAIL_ADDRESS": {
+            "description": "The e-mail address to send notifications about new voice messages to."
+        }
+    },
+    "addons": [
+        "sendgrid:starter"
+    ]
+}
