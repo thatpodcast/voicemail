@@ -13,6 +13,9 @@ $app = new Application;
 
 $app->register(new MonologServiceProvider(), [
     'monolog.logfile' => 'php://stdout',
+    'monolog.level' => getenv('LOG_LEVEL')
+        ? constant('Monolog\Logger::'.strtoupper(getenv('LOG_LEVEL')))
+        : 'warning',
 ]);
 
 $app['sendgrid'] = function ($app) {
